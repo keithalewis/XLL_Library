@@ -102,7 +102,7 @@ namespace xll {
 			}
 
 			if (i == 0 && arg.Alias().size() > 0) {
-				for (size_t i = 1; i <= arg.Alias().size(); ++i)
+				for (/*size_t*/ i = 1; i <= arg.Alias().size(); ++i)
 					Register(arg, i);
 			}
 

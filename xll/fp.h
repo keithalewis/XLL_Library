@@ -217,11 +217,13 @@ namespace xll {
 		{
 			return pf->columns;
 		}
+#pragma warning(push)
+#pragma warning(disable: 4724)
 		xword size() const
 		{
 			return buf ? (is_empty() ? 0 : pf->rows * pf->columns) : 0;
 		}
-
+#pragma warning(pop)
 		void reshape(xword r, xword c)
 		{
 			realloc(r, c);

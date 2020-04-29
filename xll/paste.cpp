@@ -420,11 +420,11 @@ xll_paste_create(void)
 			if (xDef.xltype == xltypeStr && xDef.val.str[1] == '=') {
 				OPERX xEval = ExcelX(xlfEvaluate, xDef);
 				if (xEval.size() > 1) {
-					OPERX xFor = ExcelX(xlfConcatenate, 
+					OPERX xFor2 = ExcelX(xlfConcatenate, 
 						OPERX(_T("=RANGE.SET(")), 
 						OPERX(xDef.val.str + 2, xDef.val.str[0] - 1), 
 						OPERX(_T(")")));
-					ExcelX(xlcFormula, xFor);
+					ExcelX(xlcFormula, xFor2);
 					xNamei = ExcelX(xlfConcatenate, OPERX(_T("RANGE.GET(")), xNamei, OPERX(_T(")")));
 				}
 				else {
