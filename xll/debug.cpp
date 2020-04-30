@@ -45,7 +45,7 @@ struct CrtDbg {
 CrtDbg crtDbg;
 
 #include <typeinfo>
-
+/*
 struct clear_type_info_cache {
 	~clear_type_info_cache() {
 		__type_info_node* & node = __type_info_root_node._Next;
@@ -61,5 +61,6 @@ struct clear_type_info_cache {
 		}
 	}
 };// ctic;
+*/
 
 #endif // _DEBUG

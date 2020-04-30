@@ -194,7 +194,7 @@ namespace Mapping {
 			return h_;
 		}
 	};
-
+	/*
 	class View {
 		LPVOID p_;
 	public:
@@ -265,6 +265,6 @@ namespace Mapping {
 			return &h_[0] + n_;
 		}
 	};
-
+	*/
 
 } // namespace Mapping

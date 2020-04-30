@@ -137,6 +137,7 @@
     <ProjectGuid>{8E1C34F2-B857-461F-BFC0-20A85F4B938E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>xll</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -185,19 +186,23 @@
     <TargetExt>.lib</TargetExt>
     <OutDir>$(PlatformToolset)\$(IntDir)</OutDir>
     <IntDir>$(PlatformToolset)\$(Configuration)\</IntDir>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetExt>.lib</TargetExt>
     <OutDir>$(PlatformToolset)\$(IntDir)</OutDir>
     <IntDir>$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(PlatformToolset)\$(IntDir)</OutDir>
     <IntDir>$(PlatformToolset)\$(Configuration)\</IntDir>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(PlatformToolset)\$(IntDir)</OutDir>
     <IntDir>$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
