@@ -208,7 +208,7 @@ namespace Mapping {
 		}
 		~View()
 		{
-			ensure (UnmapViewOfFile(p_));
+			UnmapViewOfFile(p_);
 		}
 		operator LPVOID()
 		{
